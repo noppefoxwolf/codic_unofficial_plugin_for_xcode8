@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>Codic unofficial plugin</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
@@ -36,7 +36,7 @@
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>com.fivemeo.Codic.EditorPlugin.SourceEditorCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Translate Program Word by Codic</string>
+					<string>translate</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
