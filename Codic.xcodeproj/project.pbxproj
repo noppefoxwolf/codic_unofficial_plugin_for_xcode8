@@ -11,7 +11,40 @@
 		D74731A21D3113FA0010AF33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74731A11D3113FA0010AF33 /* ViewController.swift */; };
 		D74731A41D3113FA0010AF33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74731A31D3113FA0010AF33 /* Assets.xcassets */; };
 		D74731A71D3113FA0010AF33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74731A51D3113FA0010AF33 /* Main.storyboard */; };
+		D74731B51D3114880010AF33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74731B41D3114880010AF33 /* Cocoa.framework */; };
+		D74731BA1D3114880010AF33 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74731B91D3114880010AF33 /* SourceEditorExtension.swift */; };
+		D74731BC1D3114880010AF33 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74731BB1D3114880010AF33 /* SourceEditorCommand.swift */; };
+		D74731C01D3114880010AF33 /* EditorPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D74731B21D3114880010AF33 /* EditorPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D782E7CA1D3A7F8300B15BE6 /* CodicCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7C91D3A7F8300B15BE6 /* CodicCandidate.swift */; };
+		D782E7CC1D3A7F9900B15BE6 /* CodicWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7CB1D3A7F9900B15BE6 /* CodicWord.swift */; };
+		D782E7CE1D3A7FAB00B15BE6 /* CodicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7CD1D3A7FAB00B15BE6 /* CodicItem.swift */; };
+		D782E7D01D3A7FBD00B15BE6 /* CodicResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7CF1D3A7FBD00B15BE6 /* CodicResponce.swift */; };
+		D782E7D21D3A802300B15BE6 /* CodicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7D11D3A802300B15BE6 /* CodicAPI.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D74731BE1D3114880010AF33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D74731941D3113FA0010AF33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D74731B11D3114880010AF33;
+			remoteInfo = EditorPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D74731C41D3114890010AF33 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D74731C01D3114880010AF33 /* EditorPlugin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D747319C1D3113FA0010AF33 /* Codic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +53,17 @@
 		D74731A31D3113FA0010AF33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D74731A61D3113FA0010AF33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D74731A81D3113FA0010AF33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74731B21D3114880010AF33 /* EditorPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EditorPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74731B41D3114880010AF33 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D74731B81D3114880010AF33 /* EditorPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EditorPlugin.entitlements; sourceTree = "<group>"; };
+		D74731B91D3114880010AF33 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		D74731BB1D3114880010AF33 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		D74731BD1D3114880010AF33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D782E7C91D3A7F8300B15BE6 /* CodicCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicCandidate.swift; sourceTree = "<group>"; };
+		D782E7CB1D3A7F9900B15BE6 /* CodicWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicWord.swift; sourceTree = "<group>"; };
+		D782E7CD1D3A7FAB00B15BE6 /* CodicItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicItem.swift; sourceTree = "<group>"; };
+		D782E7CF1D3A7FBD00B15BE6 /* CodicResponce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicResponce.swift; sourceTree = "<group>"; };
+		D782E7D11D3A802300B15BE6 /* CodicAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D74731AF1D3114880010AF33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74731B51D3114880010AF33 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				D747319E1D3113FA0010AF33 /* Codic */,
+				D74731B61D3114880010AF33 /* EditorPlugin */,
+				D74731B31D3114880010AF33 /* Frameworks */,
 				D747319D1D3113FA0010AF33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D747319C1D3113FA0010AF33 /* Codic.app */,
+				D74731B21D3114880010AF33 /* EditorPlugin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +116,46 @@
 			path = Codic;
 			sourceTree = "<group>";
 		};
+		D74731B31D3114880010AF33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D74731B41D3114880010AF33 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D74731B61D3114880010AF33 /* EditorPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				D782E7D31D3A804300B15BE6 /* Codic */,
+				D74731B91D3114880010AF33 /* SourceEditorExtension.swift */,
+				D74731BB1D3114880010AF33 /* SourceEditorCommand.swift */,
+				D74731BD1D3114880010AF33 /* Info.plist */,
+				D74731B71D3114880010AF33 /* Supporting Files */,
+			);
+			path = EditorPlugin;
+			sourceTree = "<group>";
+		};
+		D74731B71D3114880010AF33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D74731B81D3114880010AF33 /* EditorPlugin.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D782E7D31D3A804300B15BE6 /* Codic */ = {
+			isa = PBXGroup;
+			children = (
+				D782E7C91D3A7F8300B15BE6 /* CodicCandidate.swift */,
+				D782E7CB1D3A7F9900B15BE6 /* CodicWord.swift */,
+				D782E7CD1D3A7FAB00B15BE6 /* CodicItem.swift */,
+				D782E7CF1D3A7FBD00B15BE6 /* CodicResponce.swift */,
+				D782E7D11D3A802300B15BE6 /* CodicAPI.swift */,
+			);
+			name = Codic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +166,34 @@
 				D74731981D3113FA0010AF33 /* Sources */,
 				D74731991D3113FA0010AF33 /* Frameworks */,
 				D747319A1D3113FA0010AF33 /* Resources */,
+				D74731C41D3114890010AF33 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D74731BF1D3114880010AF33 /* PBXTargetDependency */,
 			);
 			name = Codic;
 			productName = Codic;
 			productReference = D747319C1D3113FA0010AF33 /* Codic.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D74731B11D3114880010AF33 /* EditorPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74731C11D3114890010AF33 /* Build configuration list for PBXNativeTarget "EditorPlugin" */;
+			buildPhases = (
+				D74731AE1D3114880010AF33 /* Sources */,
+				D74731AF1D3114880010AF33 /* Frameworks */,
+				D74731B01D3114880010AF33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EditorPlugin;
+			productName = EditorPlugin;
+			productReference = D74731B21D3114880010AF33 /* EditorPlugin.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +206,12 @@
 				ORGANIZATIONNAME = "Tomoya Hirano";
 				TargetAttributes = {
 					D747319B1D3113FA0010AF33 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VB8JDD4PBJ;
+						DevelopmentTeamName = "hirano tomoya (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					D74731B11D3114880010AF33 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VB8JDD4PBJ;
 						DevelopmentTeamName = "hirano tomoya (Personal Team)";
@@ -113,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				D747319B1D3113FA0010AF33 /* Codic */,
+				D74731B11D3114880010AF33 /* EditorPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +245,13 @@
 			files = (
 				D74731A41D3113FA0010AF33 /* Assets.xcassets in Resources */,
 				D74731A71D3113FA0010AF33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74731B01D3114880010AF33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +267,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D74731AE1D3114880010AF33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D782E7D21D3A802300B15BE6 /* CodicAPI.swift in Sources */,
+				D782E7CC1D3A7F9900B15BE6 /* CodicWord.swift in Sources */,
+				D782E7D01D3A7FBD00B15BE6 /* CodicResponce.swift in Sources */,
+				D782E7CE1D3A7FAB00B15BE6 /* CodicItem.swift in Sources */,
+				D782E7CA1D3A7F8300B15BE6 /* CodicCandidate.swift in Sources */,
+				D74731BA1D3114880010AF33 /* SourceEditorExtension.swift in Sources */,
+				D74731BC1D3114880010AF33 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D74731BF1D3114880010AF33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D74731B11D3114880010AF33 /* EditorPlugin */;
+			targetProxy = D74731BE1D3114880010AF33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D74731A51D3113FA0010AF33 /* Main.storyboard */ = {
@@ -172,7 +322,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer: hirano tomoya (QF29S464AS)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -219,7 +369,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer: hirano tomoya (QF29S464AS)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -242,7 +392,9 @@
 		D74731AC1D3113FA0010AF33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Codic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -255,12 +407,48 @@
 		D74731AD1D3113FA0010AF33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Codic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fivemeo.Codic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D74731C21D3114890010AF33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = EditorPlugin/EditorPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EditorPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivemeo.Codic.EditorPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D74731C31D3114890010AF33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = EditorPlugin/EditorPlugin.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EditorPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivemeo.Codic.EditorPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -284,6 +472,16 @@
 				D74731AD1D3113FA0010AF33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74731C11D3114890010AF33 /* Build configuration list for PBXNativeTarget "EditorPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74731C21D3114890010AF33 /* Debug */,
+				D74731C31D3114890010AF33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

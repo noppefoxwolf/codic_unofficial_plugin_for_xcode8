@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>EditorPlugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D747319B1D3113FA0010AF33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D74731B11D3114880010AF33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
