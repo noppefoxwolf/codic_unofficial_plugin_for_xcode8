@@ -68,6 +68,7 @@
 		D782E7D11D3A802300B15BE6 /* CodicAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicAPI.swift; sourceTree = "<group>"; };
 		D782E7D41D3A8D5C00B15BE6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D782E7D71D3A999900B15BE6 /* XCSourceTextBuffer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		D7BB94341D3AA11900C2298F /* EditorPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditorPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 				D74731BD1D3114880010AF33 /* Info.plist */,
 				D74731B71D3114880010AF33 /* Supporting Files */,
 				D782E7D41D3A8D5C00B15BE6 /* Utils.swift */,
+				D7BB94341D3AA11900C2298F /* EditorPlugin-Bridging-Header.h */,
 			);
 			path = EditorPlugin;
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VB8JDD4PBJ;
 						DevelopmentTeamName = "hirano tomoya (Personal Team)";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -439,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EditorPlugin/EditorPlugin.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -448,6 +452,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fivemeo.Codic.EditorPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EditorPlugin/EditorPlugin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -456,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EditorPlugin/EditorPlugin.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -465,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fivemeo.Codic.EditorPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EditorPlugin/EditorPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
