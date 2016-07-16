@@ -20,6 +20,8 @@
 		D782E7CE1D3A7FAB00B15BE6 /* CodicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7CD1D3A7FAB00B15BE6 /* CodicItem.swift */; };
 		D782E7D01D3A7FBD00B15BE6 /* CodicResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7CF1D3A7FBD00B15BE6 /* CodicResponce.swift */; };
 		D782E7D21D3A802300B15BE6 /* CodicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7D11D3A802300B15BE6 /* CodicAPI.swift */; };
+		D782E7D51D3A8D5C00B15BE6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7D41D3A8D5C00B15BE6 /* Utils.swift */; };
+		D782E7D81D3A999900B15BE6 /* XCSourceTextBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782E7D71D3A999900B15BE6 /* XCSourceTextBuffer+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		D782E7CD1D3A7FAB00B15BE6 /* CodicItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicItem.swift; sourceTree = "<group>"; };
 		D782E7CF1D3A7FBD00B15BE6 /* CodicResponce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicResponce.swift; sourceTree = "<group>"; };
 		D782E7D11D3A802300B15BE6 /* CodicAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodicAPI.swift; sourceTree = "<group>"; };
+		D782E7D41D3A8D5C00B15BE6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D782E7D71D3A999900B15BE6 /* XCSourceTextBuffer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +131,13 @@
 		D74731B61D3114880010AF33 /* EditorPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				D782E7D61D3A998D00B15BE6 /* Extensions */,
 				D782E7D31D3A804300B15BE6 /* Codic */,
 				D74731B91D3114880010AF33 /* SourceEditorExtension.swift */,
 				D74731BB1D3114880010AF33 /* SourceEditorCommand.swift */,
 				D74731BD1D3114880010AF33 /* Info.plist */,
 				D74731B71D3114880010AF33 /* Supporting Files */,
+				D782E7D41D3A8D5C00B15BE6 /* Utils.swift */,
 			);
 			path = EditorPlugin;
 			sourceTree = "<group>";
@@ -154,6 +160,14 @@
 				D782E7D11D3A802300B15BE6 /* CodicAPI.swift */,
 			);
 			name = Codic;
+			sourceTree = "<group>";
+		};
+		D782E7D61D3A998D00B15BE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D782E7D71D3A999900B15BE6 /* XCSourceTextBuffer+Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +290,10 @@
 				D782E7D01D3A7FBD00B15BE6 /* CodicResponce.swift in Sources */,
 				D782E7CE1D3A7FAB00B15BE6 /* CodicItem.swift in Sources */,
 				D782E7CA1D3A7F8300B15BE6 /* CodicCandidate.swift in Sources */,
+				D782E7D81D3A999900B15BE6 /* XCSourceTextBuffer+Extensions.swift in Sources */,
 				D74731BA1D3114880010AF33 /* SourceEditorExtension.swift in Sources */,
 				D74731BC1D3114880010AF33 /* SourceEditorCommand.swift in Sources */,
+				D782E7D51D3A8D5C00B15BE6 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,5 +17,5 @@ class CodicResponce {
       print("failure parse")
     }
   }
-  var items = [CodicItem]()
+  private(set) var items = [CodicItem]()
 }

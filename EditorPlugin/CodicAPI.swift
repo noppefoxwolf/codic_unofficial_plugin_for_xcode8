@@ -17,7 +17,7 @@ class CodicAPI {
     let apiBase = "https://api.codic.jp"
     let apiRoute = "/v1/engine/translate.json"
     let params = ["text": text, "casing": "camel"]
-    let apiQuery = params.toQuery
+    let apiQuery = params.toQuery()
     let url = URL(string: apiBase + apiRoute + "?" + apiQuery)!
     var req = URLRequest(url: url)
     req.setValue(token, forHTTPHeaderField: "Authorization")

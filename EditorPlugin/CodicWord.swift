@@ -18,8 +18,8 @@ class CodicWord {
     }
   }
   
-  var successful = false
-  var text = ""
-  var translatedText = ""
-  var candidates = [CodicCandidate]()
+  private(set) var successful = false
+  private(set) var text = ""
+  private(set) var translatedText = ""
+  private(set) var candidates = [CodicCandidate]()
 }

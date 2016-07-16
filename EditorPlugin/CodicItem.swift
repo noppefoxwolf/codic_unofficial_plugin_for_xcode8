@@ -18,8 +18,8 @@ class CodicItem {
     }
   }
   
-  var successful: Bool = false
-  var text: String = ""
-  var translatedText = ""
-  var words = [CodicWord]()
+  private(set) var successful: Bool = false
+  private(set) var text: String = ""
+  private(set) var translatedText = ""
+  private(set) var words = [CodicWord]()
 }

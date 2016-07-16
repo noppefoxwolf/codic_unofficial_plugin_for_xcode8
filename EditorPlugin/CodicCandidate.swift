@@ -12,5 +12,5 @@ class CodicCandidate {
   init(json: Dictionary<String, AnyObject>) {
     text = json["text"] as? String ?? ""
   }
-  var text = ""
+  private(set) var text = ""
 }
